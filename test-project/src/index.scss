@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    max-height: 2000px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar{
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1; 
+  font-size: 15px;
+}
+
+.header-ayff{
+  font-size: 20px;
+  color: black;
+  margin-top: 5%;
+}
+
+.headerCarousel{
+  margin-top: 2% !important;
+}
+
+.phones{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+}
+
+.carousel{
+  margin-top: 2%;
+  justify-self: normal;
+  align-self: baseline;
+  width: 100%;
+  
+  img{
+    width: 100%;
+    height: 700px;
+  }
+}
+
+.header-companys{
+  font-size: 20px;
+  color: black;
+  margin-top: 2%;
+}
+
+.companys{
+  width: 100%;
+  height: 100px;
+  // background: black;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+
+  div:nth-child(2){
+    img{
+      width: 50%;
+      height: 90%;
+    }
+  }
+
+  div:nth-child(3){
+    img{
+      width: 100%;
+      height: 90%;
+    }
+  }
+
+  div:nth-child(7){
+    img{
+      width: 100%;
+      height: 80%;
+    }
+  }
+
+  div{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.header-filters{
+  font-size: 20px;
+  color: black;
+  margin-top: 2%;
+}
+
+.filters{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: black;
+  margin-top: 2%;
+
+  .dropdown{
+    margin-left: 53%;
+    margin-right: 1%;
+  }
+
+  #apply{
+    margin-right: 1%;
+  }
+
+  button{
+    margin-left: 20px;
+  }
+}
+
+.phone{
+  img{
+    width: 100%;
+    height: 320px;
+  }
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-around;
+
+    div{
+        width: 20%;
+        height: 100%;
+        background: rgb(184, 184, 184);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+
+        ul{
+            list-style-type: none;
+            margin-left: -10%;
+        }
+    }
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
