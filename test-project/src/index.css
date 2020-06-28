@@ -149,6 +149,12 @@ body {
   margin-left: 20px;
 }
 
+.phone {
+  width: 250px;
+  height: 80%;
+  margin-top: 2%;
+}
+
 .phone img {
   width: 100%;
   height: 320px;
@@ -156,19 +162,9 @@ body {
 
 .footer {
   width: 100%;
-  height: 200px;
-  background: lightgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.footer div {
-  width: 20%;
-  height: 100%;
-  background: #b8b8b8;
+  height: 100px;
+  background: black;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,21 +172,149 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer div ul {
-  list-style-type: none;
-  margin-left: -10%;
+.footerLinks {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLinks a:hover {
+  color: lightblue;
+  text-shadow: white 0 0 10px;
+}
+
+.footerLinks img {
+  width: 3%;
+  height: 70%;
+  margin-left: 4%;
+}
+
+.footerInfo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 13px;
+}
+
+.footerInfo img {
+  width: 4%;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.copyraight {
+  font-size: 13px;
+}
+
+#accordion {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.card-body-admin {
+  padding: 0;
+}
+
+.warningCards {
+  width: 100%;
+  height: 25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#warningEnter {
+  color: white;
+  background: darkred;
+  border-radius: 5px;
+}
+
+.errorCard {
+  max-width: 18rem;
+}
+
+.errorCard:hover {
+  -webkit-box-shadow: red 0 0 20px;
+          box-shadow: red 0 0 20px;
+}
+
+.warningCard {
+  max-width: 18rem;
+}
+
+.warningCard:hover {
+  -webkit-box-shadow: yellow 0 0 20px;
+          box-shadow: yellow 0 0 20px;
+}
+
+.cart {
+  width: 19%;
+}
+
+.prettyButton {
+  border: none;
+}
+
+.prettyButton:hover {
+  -webkit-box-shadow: white 0 0 20px;
+          box-shadow: white 0 0 20px;
+}
+
+.prettyButtonPrimary {
+  border: none;
+}
+
+.prettyButtonPrimary:hover {
+  -webkit-box-shadow: lightcoral 0 0 20px;
+          box-shadow: lightcoral 0 0 20px;
+}
+
+.selectMain {
+  width: 15%;
+  margin-left: 50%;
+}
+
+.filterValueMain {
+  width: 15%;
+  margin-left: 1%;
+}
+
+.table {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,48 +1,48 @@
 [
     {
-        "id": 1,
+        "_id": 1,
         "model": "iPhone 11 Pro",
         "description": "Apple ",
         "price": 1000,
         "image": "iphone.jpeg"
     },
     {
-        "id": 2,
+        "_id": 2,
         "model": "HONOR 20 Pro",
         "description": "HONOR",
         "price": 600,
         "image": "images/honor.jpeg"
     },
     {
-        "id": 3,
+        "_id": 3,
         "model": "Samsung Galaxy S10",
         "description": "Samsung Group",
         "price": 1100,
         "image": "images/s10phone.jpg"
     },
     {
-        "id": 4,
+        "_id": 4,
         "model": "HUAWEI P30",
         "description": "Huawei Technologies Co. Ltd.",
         "price": 900,
         "image": "images/huaweip30.jpeg"
     },
     {
-        "id": 5,
+        "_id": 5,
         "model": "Xiaomi Mi Note 10",
         "description": "Xiaomi Corporation",
         "price": 1000,
         "image": "images/ximi10.jpeg"
     },
     {
-        "id": 6,
+        "_id": 6,
         "model": "Google Pixel 4",
         "description": "Google Pixel",
         "price": 600,
         "image": "images/pixel4.jpeg"
     },
     {
-        "id": 7,
+        "_id": 7,
         "model": "OnePlus 7",
         "description": "OnePlus",
         "price": 1100,

@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "name": "Artem",
+        "surname": "Kuharonok ",
+        "login": "sexInstructor2004",
+        "email": "some email",
+        "password": "1",
+        "stack":[]
+    },
+    {
+        "_id": 2,
+        "name": "Vlad",
+        "surname": "Savinov ",
+        "login": "Svin",
+        "email": "some email",
+        "password": "2",
+        "stack":[]
+    },
+    {
+        "_id": 3,
+        "name": "Daniil",
+        "surname": "Derko ",
+        "login": "Golf2TheBest",
+        "email": "some email",
+        "password": "3",
+        "stack":[]
+    },
+    {
+        "_id": 4,
+        "name": "Pavel",
+        "surname": "Kulbatski ",
+        "login": "AlkoMasterGlobal",
+        "email": "some email",
+        "password": "4",
+        "stack":[]
+    },
+    {
+        "_id": 5,
+        "name": "Dmitry",
+        "surname": "Moiseenko ",
+        "login": "ANIMESHNIK",
+        "email": "some email",
+        "password": "5",
+        "stack":[]
+    },
+    {
+        "_id": 6,
+        "name": "Artem",
+        "surname": "Mel'yankov ",
+        "login": "MenshinstvaRylat",
+        "email": "some email",
+        "password": "6",
+        "stack":[]
+    },
+    {
+        "_id": 7,
+        "name": "SergAy",
+        "surname": "Krasnov ",
+        "login": "CR7",
+        "email": "some email",
+        "password": "7",
+        "stack":[]
+    },
+    {
+        "_id": 8,
+        "name": "Stas",
+        "surname": "Shilyk ",
+        "login": "PI&door&us",
+        "email": "some email",
+        "password": "8",
+        "stack":[]
+    }
+]

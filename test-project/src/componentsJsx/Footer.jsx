@@ -8,44 +8,32 @@ class Footer extends Component {
     render(){
   
       return (
-        <div className="footer shadow-lg" style={{display: 'flex'}}>
-            <div className="shadow">
-                <ul>
-                    <li>Some contact</li>
-                    <li>Some contact</li>
-                    <li>Some contact</li>
-                    <li>Some contact</li>
-                    <li>Some contact</li>
-                    <li>Some contact</li>
-                </ul>
+        <div className="footer shadow-lg">
+            <div className="footerLinks">
+                <img src="images/inst.png" alt="inst logo"/>
+                <a href="https://www.instagram.com/temyahater">temyahater</a>
+                <img src="images/vk-1.svg" alt="vk logo"/>
+                <a href="https://vk.com/temyahater">Temya Kyharenok</a>
+                <img src="images/facebook.webp" alt="facebook logo"/>
+                <a href="https://www.facebook.com/">Temya Hater</a>
+                <img src="images/gmail.png" alt="gmail logo"/>
+                <a href="mailto:howkiwe@gmail.com">howkiwe@gmail.com</a>
+                <img src="images/phone.png" alt="whatsup logo"/>
+                <span>+375 (29) 215-79-28</span>
             </div>
-            <div className="shadow">
-                <ul>
-                    <li>Some information</li>
-                    <li>Some information</li>
-                    <li>Some information</li>
-                    <li>Some information</li>
-                    <li>Some information</li>
-                    <li>Some information</li>
-                </ul>
+            <div className="footerInfo">
+                <span>Privacy Policy</span>
+                <span>|</span>
+                <span>Terms of Use</span>
+                <span>|</span>
+                <span>Sales and Refunds</span>
+                <span>|</span>
+                <span>Legal</span>
+                <span>|</span>
+                <div>Site Map: Republic of Belarus</div>
+                <img src="images/belarus.png" alt="map logo"/>
             </div>
-            <div className="shadow">
-                <ul>
-                    <li>Some links</li>
-                    <li>Some links</li>
-                    <li>Some links</li>
-                    <li>Some links</li>
-                    <li>Some links</li>
-                    <li>Some links</li>
-                </ul>
-                {/* <div className="card text-white bg-dark mb-3" style={{maxWidth: '18rem'}}>
-                    <div className="card-header">Header</div>
-                    <div className="card-body">
-                    <h5 className="card-title">Dark card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div> */}
-            </div>
+            <span className="copyraight">Copyright © 2020 Temyahater Inc. All rights reserved.</span>
         </div>
       );
     }

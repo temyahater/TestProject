@@ -1,0 +1,29 @@
+[
+    {
+        "_id": 9,
+        "name": "Vlad",
+        "surname": "Iiiikaaaan ",
+        "login": "vika",
+        "email": "some email",
+        "password": "9",
+        "stack":[]
+    },
+    {
+        "_id": 10,
+        "name": "Andrey",
+        "surname": "Yakimovich ",
+        "login": "Yamakasi",
+        "email": "some email",
+        "password": "10",
+        "stack":[]
+    },
+    {
+        "_id": 11,
+        "name": "Evgeny",
+        "surname": "Shokel ",
+        "login": "ShokeRR",
+        "email": "some email",
+        "password": "11",
+        "stack":[]
+    }
+]

@@ -1,17 +1,15 @@
 import React from 'react';
+// import PrettyAlert from './PrettyAlert';
 
-function test(test){
-    console.log(test);
-}
-
-const Phone =({model, description, price, image})=>{
+const Phone =({model, description, price, image, click})=>{
     return (
-        <div className="phone shadow-lg card" style={{width: '250px',height:'80%', marginTop:'2%'}}>
-            <img className="card-img-top" src={image} alt="Phone"/>
+        <div className="phone shadow-lg card">
+            {/* <PrettyAlert /> */}
+            <img className="card-img-top prettyButton" src={image} alt="Phone"/>
             <div className="card-body">
                 <h5 className="card-title">{model}</h5>
                 <p className="card-text">{description}</p>
-                <input type="button" href="#" className="btn btn-outline-primary" value={price+'$'} onClick={()=>{test(price)}}/>
+                <input type="button" data-toggle="modal" data-target="#prettyAlertModal" href="#" className="btn btn-danger prettyButtonPrimary" value={price+'$'} onClick={click}/>
             </div>
         </div>
     );
