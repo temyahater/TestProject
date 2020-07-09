@@ -15,8 +15,11 @@ class AdminNavBar extends Component {
           <li className="nav-item active">
             <a className="nav-link" href="#navik">Admin tables<span className="sr-only">(current)</span></a>
           </li>
+          <li className="nav-item">
+            <button className="btn btn-outline-light ml-2 prettyButton1" data-toggle="modal" data-target="#feedbackAdminModalLong">Feedbacks</button>
+          </li>
         </ul>
-        <button type="button" className="btn btn-outline-light ml-2 prettyButton" data-toggle="modal" data-target="#exitModal">Exit</button>
+        <button type="button" className="btn btn-outline-light ml-2 prettyButton1" data-toggle="modal" data-target="#exitModal">Exit</button>
       </div>
     </nav>
     );

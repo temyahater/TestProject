@@ -17,7 +17,7 @@ async function postFetch(usertoreg){
       try {
         const response = await fetch('http://localhost:4000/users', {
           method: 'POST', 
-          body: JSON.stringify({id:usertoreg._id,name: usertoreg.name, surname: usertoreg.surname, login: usertoreg.login, email: usertoreg.email, password: usertoreg.password, stack:[]}), 
+          body: JSON.stringify({id:usertoreg._id,name: usertoreg.name, surname: usertoreg.surname, login: usertoreg.login, email: usertoreg.email, password: usertoreg.password, stack:[], orders:[]}), 
           headers: {'Content-Type': 'application/json'}
         });
         const json = await response.json();
@@ -66,7 +66,7 @@ class UsersToReg extends Component {
                           {/* <PrettyDelete2 click={()=>deleteFetch(user._id)&&this.setState({userstoreg: this.state.userstoreg.filter(el=>el._id!==user._id)})}/>
                             <button className="btn btn-danger" data-toggle="modal" data-target="#prettyDeleteModal2">
                             Delete</button> */}
-                          <button className="btn btn-danger" onClick={()=>window.confirm('Are u sure?')?deleteFetch(user._id)&&this.setState({userstoreg: this.state.userstoreg.filter(el=>el._id!==user._id)}):0}>
+                          <button className="btn btn-danger prettyButtonPrimary" onClick={()=>window.confirm('Are u sure?')?deleteFetch(user._id)&&this.setState({userstoreg: this.state.userstoreg.filter(el=>el._id!==user._id)}):0}>
                           Delete</button></td>
                         <td><button className="btn btn-secondary" onClick={()=>window.confirm('Are u sure?')?postFetch(user)&&deleteFetch(user._id)&&this.setState({userstoreg: this.state.userstoreg.filter(el=>el._id!==user._id)}):0}>Confirm</button></td>
                         </tr>)

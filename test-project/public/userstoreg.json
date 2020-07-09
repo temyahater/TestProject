@@ -6,7 +6,8 @@
         "login": "vika",
         "email": "some email",
         "password": "9",
-        "stack":[]
+        "stack":[],
+        "orders":[]
     },
     {
         "_id": 10,
@@ -15,7 +16,8 @@
         "login": "Yamakasi",
         "email": "some email",
         "password": "10",
-        "stack":[]
+        "stack":[],
+        "orders":[]
     },
     {
         "_id": 11,
@@ -24,6 +26,7 @@
         "login": "ShokeRR",
         "email": "some email",
         "password": "11",
-        "stack":[]
+        "stack":[],
+        "orders":[]
     }
 ]

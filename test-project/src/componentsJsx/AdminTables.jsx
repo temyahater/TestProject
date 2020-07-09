@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import UserTable from './UserTable';
 import PhonesTable from './PhonesTable';
 import UsersToReg from './UsersToReg';
+import OrdersTable from './OrdersTable';
 
 class AdminTables extends Component {
 
@@ -45,6 +46,18 @@ class AdminTables extends Component {
                 </div>
                 <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                     <div className="card-body card-body-admin"><PhonesTable /></div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="card-header" id="headingFour">
+                    <h5 className="mb-0">
+                        <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Orders
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div className="card-body card-body-admin"><OrdersTable /></div>
                 </div>
             </div>
         </div>

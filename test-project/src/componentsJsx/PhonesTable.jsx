@@ -57,7 +57,7 @@ class PhonesTable extends Component {
                                         {/* <PrettyDelete3 click={()=>deleteFetch(phone._id)&&this.setState({phones: this.state.phones.filter(el=>el._id!==phone._id)})}/>
                                         <button className="btn btn-danger" data-toggle="modal" data-target="#prettyDeleteModal3">
                                         Delete</button> */}
-                                        <button className="btn btn-danger" onClick={()=>window.confirm('Are u sure?')?deleteFetch(phone._id)&&this.setState({phones: this.state.phones.filter(el=>el._id!==phone._id)}):0}>
+                                        <button className="btn btn-danger prettyButtonPrimary" onClick={()=>window.confirm('Are u sure?')?deleteFetch(phone._id)&&this.setState({phones: this.state.phones.filter(el=>el._id!==phone._id)}):0}>
                                         Delete</button>
                                         </td>
                                 </tr>)

@@ -63,7 +63,11 @@ class Modal extends Component{
                             </div>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-danger" onClick={()=>this.props.clickRegister()} data-dismiss="modal">Register</button>
+                            <button type="button" className="btn btn-danger prettyButtonPrimary" onClick={()=>(document.getElementById('registerName').value
+                            &&document.getElementById('registerSurname').value
+                            &&document.getElementById('registerLogin').value
+                            &&document.getElementById('registerEmail').value
+                            &&document.getElementById('registerPassword').value)?this.props.clickRegister():alert('Uncorret data')} data-dismiss="modal">Register</button>
                         </div>
                     </div>
                 </div>
@@ -84,7 +88,31 @@ class Modal extends Component{
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" data-dismiss="modal">No</button>
-                            <button type="button" className="btn btn-danger" onClick={()=>this.props.exitClick()} data-dismiss="modal">Yes</button>
+                            <button type="button" className="btn btn-danger prettyButtonPrimary" onClick={()=>this.props.exitClick()} data-dismiss="modal">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="modal fade" id="forgotPassModal" role="dialog" aria-labelledby="forgotPassModalLabel" aria-hidden="true">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="forgotPassModalLabel">Password recovery</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <div className="input-group">
+                                <div className="input-group-prepend">
+                                        <span className="input-group-text">Login:</span>
+                                </div>
+                                <input id="forgotPassEmail" type="text" className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" />
+                            </div>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-danger prettyButtonPrimary" onClick={()=>this.props.forgotPass()} data-dismiss="modal">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -113,16 +141,17 @@ class Modal extends Component{
                                 <div className="input-group-prepend">
                                         <span className="input-group-text">Password</span>
                                 </div>
-                                <input id="passwordEnter" type="text" className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" />
+                                <input id="passwordEnter" type="text" className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" /><br/>
+                                <button className="forgotPass" data-toggle="modal" data-target="#forgotPassModal" data-dismiss="modal">Forgot password?</button>
                             </div>
                         </div>
                         <div className="modal-footer">
                             {/* <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button> */}
-                            <button type="button" className="btn btn-danger" onClick={()=>this.props.enterClick()} data-dismiss="modal">Enter</button>
+                            <button type="button" className="btn btn-danger prettyButtonPrimary" onClick={()=>this.props.enterClick()} data-dismiss="modal">Enter</button>
                             {/* <Link to="/admin">
                                 <button className="btn btn-secondary">Enter</button>
                             </Link> */}
-                            <button type="button" className="btn btn-danger" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</button>
+                            <button type="button" className="btn btn-danger prettyButtonPrimary" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</button>
                         </div>
                     </div>
                 </div>

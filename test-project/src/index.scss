@@ -1,3 +1,6 @@
+$black1: rgb(43, 43, 43);
+$orange1: rgb(255, 187, 61);
+
 body {
     margin: 0;
     max-height: 2000px;
@@ -6,6 +9,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url('/images/testback4.jpg');
   }
 
 .App{
@@ -15,7 +19,7 @@ body {
 }
 
 .navbar{
-  color: white;
+  background: black;
   width: 100%;
   position: fixed;
   z-index: 1; 
@@ -24,7 +28,7 @@ body {
 
 .header-ayff{
   font-size: 20px;
-  color: black;
+  color: white;
   margin-top: 5%;
 }
 
@@ -33,16 +37,16 @@ body {
 }
 
 .phones{
+  background-image: url('/images/testback2.jpg');
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
 .carousel{
-  margin-top: 2%;
   justify-self: normal;
   align-self: baseline;
   width: 100%;
@@ -55,14 +59,15 @@ body {
 
 .header-companys{
   font-size: 20px;
-  color: black;
+  color: white;
   margin-top: 2%;
 }
 
 .companys{
   width: 100%;
   height: 100px;
-  // background: black;
+  background: black;
+  opacity: 50%;
   display: flex;
   justify-content: space-around;
   margin-top: 2%;
@@ -104,7 +109,7 @@ body {
 
 .header-filters{
   font-size: 20px;
-  color: black;
+  color: white;
   margin-top: 2%;
 }
 
@@ -137,7 +142,7 @@ body {
   }
   width: 250px;
   height: 80%;
-  margin-top: 2%;
+  margin: 2%;
 }
 
 .footer{
@@ -244,7 +249,15 @@ body {
 .prettyButton{
   border: none;
   &:hover{
-    box-shadow: white 0 0 20px; 
+    box-shadow: rgb(255, 187, 61) 0 0 20px;  
+    color: white;
+  }
+}
+
+.prettyButton1{
+  border: none;
+  &:hover{
+    box-shadow: white 0 0 20px;  
   }
 }
 
@@ -255,17 +268,139 @@ body {
   }
 }
 
+.prettyButtonSuccess{
+  border: none;
+  &:hover{
+    box-shadow: rgb(15, 175, 0) 0 0 20px; 
+  }
+}
+
 .selectMain{
   width: 15%;
   margin-left: 50%;
+
+  &:hover{
+    box-shadow: rgb(157, 244, 255) 0 0 10px; 
+    background: rgb(211, 244, 255);
+  }
 }
 
 .filterValueMain{
   width: 15%;
   margin-left: 1%;
+
+  &:hover{
+    box-shadow: rgb(157, 244, 255) 0 0 10px; 
+    background: rgb(211, 244, 255);
+  }
 }
 
 .table{
   width: 100%;
-}
+  margin: 0px;
+
+  td{
+    border: none;
+    
+  }
+
+  th{
+    border: none;
+  }
   
+  tbody{
+    background-image: url('/images/testback4.jpg');
+    color: white;
+  }
+}
+
+.feedbacks{
+
+  label{
+    font-size: 20px;
+  }
+
+  button{
+    border: none;
+    border-radius: 3%;
+    height: 15%;
+    width: 10%;
+    font-size: 18px;
+    background: rgb(255, 187, 61);
+    outline: none;
+
+    &:hover{
+      box-shadow: rgb(255, 187, 61) 0 0 20px; 
+    }
+
+    &:focus{
+      background: rgb(255, 176, 28);
+    }
+  }
+
+  textarea{
+    resize: none;
+  }
+
+  background: $black1;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $orange1;
+}
+
+.feedbackModal{
+  margin-top: 1%;
+
+  span{
+    font-size: 14px;
+    color: rgb(201, 36, 36);
+    font-weight: bold;
+  }
+
+  div{
+    max-width: 100%;
+  }
+}
+
+.feedbackModalLike{
+  margin-top: 1%;
+
+  span{
+    font-size: 14px;
+    color: rgb(0, 204, 0);
+    font-weight: bold;
+  }
+
+  div{
+    max-width: 100%;
+  }
+}
+
+.forgotPass{
+  border: none;
+  font-size: 14px;
+  outline: none !important;
+  &:hover{
+    box-shadow: rgb(192, 192, 192) 0 0 20px; 
+  }
+}
+
+.feedbackDelete{
+  width: 30%;
+}
+
+.orderModal{
+  .orderOrder{
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  div{
+    color: rgb(4, 99, 131);
+  }
+}

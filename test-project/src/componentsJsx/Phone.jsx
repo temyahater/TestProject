@@ -5,7 +5,7 @@ const Phone =({model, description, price, image, click})=>{
     return (
         <div className="phone shadow-lg card">
             {/* <PrettyAlert /> */}
-            <img className="card-img-top prettyButton" src={image} alt="Phone"/>
+            <img className="card-img-top" src={image} alt="Phone"/>
             <div className="card-body">
                 <h5 className="card-title">{model}</h5>
                 <p className="card-text">{description}</p>

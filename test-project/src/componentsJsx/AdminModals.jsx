@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import FeedbackLikeAdmin from './FeedbackLikeAdmin';
+import FeedbackAdmin from './FeedbackAdmin';
 
 async function postFetch(phone){
     try {
@@ -26,11 +28,23 @@ async function putFetch(phone){
     }
 }
 
+async function deleteFetch(id){
+    try {
+      const response = await fetch('http://localhost:4000/feedbacks/'+id, {
+        method: 'DELETE'
+      });
+      const json = await response.json();
+      console.log(JSON.stringify(json));
+    } catch (error) {
+      console.error(error);
+    }
+}
+
 class AdminModals extends Component{
     constructor(props){
         super(props);
         // this.handleClick = this.handleClick.bind(this); 
-        this.state = { phones: []};
+        this.state = { phones: [], feedbacks: []};
     }
 
     updateTables(){
@@ -40,6 +54,7 @@ class AdminModals extends Component{
 
     componentDidMount(){
         fetch('http://localhost:4000/phones').then(response=>{return response.json();}).then(data =>{this.setState({phones: data})});
+        fetch('http://localhost:4000/feedbacks').then(response=>{return response.json();}).then(data =>{this.setState({feedbacks: data})});
         console.log('tablesDidMount');
     }
 
@@ -122,6 +137,26 @@ class AdminModals extends Component{
                                 {id: Number(document.getElementById('addPhoneId').value),model: document.getElementById('addPhoneModel').value, 
                                 description: document.getElementById('addPhoneDesc').value,price: Number(document.getElementById('addPhonePrice').value),
                                 image: document.getElementById('addPhoneImage').value})&&this.updateTables():alert('Uncorrect ID')}>Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div className="modal fade" id="feedbackAdminModalLong" tabIndex="-1" role="dialog" aria-labelledby="feedbackAdminModalLongTitle" aria-hidden="true">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="feedbackAdminModalLongTitle">Feedbacks</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            {this.state.feedbacks.map(el=>el.like?<FeedbackLikeAdmin deleteFeedback={()=>deleteFetch(el._id)&&this.setState({feedbacks: this.state.feedbacks.filter(item=>el._id!==item._id)})} key={el._id} {...el} />:<FeedbackAdmin deleteFeedback={()=>deleteFetch(el._id)&&this.setState({feedbacks: this.state.feedbacks.filter(item=>el._id!==item._id)})} key={el._id} {...el} />)}
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-danger prettyButtonPrimary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
